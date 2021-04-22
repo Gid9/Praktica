@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+ <head></head>
+<body>
+
+ <script>
+"use strict" 
+function pow(chislo,stepen){
+let result = chislo**stepen;
+
+return result;
+}
+let chislo = prompt("Введите число x:" ,"");
+let stepen = prompt("введите степень n:" ,"");
+if (stepen < 1){
+alert("число не натуральное, введите натуральное число")
+}else{
+alert(pow(chislo, stepen));
+}
+
+</script>
+</body>
