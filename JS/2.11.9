@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+ <head></head>
+<body>
+
+  <script>
+  "use strict" 
+let login = prompt("Введите пароль", '');
+
+if (login == 'Админ') {
+
+  let pass = prompt('Пароль?', '');
+
+  if (pass == 'Я главный') {
+    alert( 'Здравствуйте!' );
+  } else if (pass == '' || pass == null) {
+    alert( 'Отменено' );
+  } else {
+    alert( 'Неверный пароль' );
+  }
+
+} else if (login == '' || userName == null) {
+  alert( 'Отменено' );
+} else {
+  alert( "Я вас не знаю" );
+}
+  </script>
+  
+</body>
+</html>
