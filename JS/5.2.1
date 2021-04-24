@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+ <head></head>
+<body>
+
+  <script>
+ // Создайте скрипт, который запрашивает ввод двух чисел (используйте prompt) и после показывает их сумму.
+ // P.S. Есть «подводный камень» при работе с типами.
+  "use strict" 
+  function Calc (){
+    this.read = function(){
+      this.a = +prompt("Введите первое число");
+      this.b = +prompt("Введите второе число");
+    };
+  
+  this.sum = function(){
+      return this.a + this.b;
+    };
+  }
+  let calc = new Calc();
+    calc.read();
+
+    alert("Сумма = " + calc.sum());
+  </script>
+ 
+</body>
+</html>
