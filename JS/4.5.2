@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+ <head></head>
+<body>
+
+  <script>
+  "use strict" 
+  
+  // Создайте функцию-конструктор Calculator, который создаёт объекты с тремя методами:
+// read() запрашивает два значения при помощи prompt и сохраняет их значение в свойствах объекта.
+// sum() возвращает сумму введённых свойств.
+// mul() возвращает произведение введённых свойств.
+
+  function Calc (){
+    this.read = function(){
+      this.a = +prompt("Введите число a");
+      this.b = +prompt("Введите число b");
+    };
+    this.sum = function(){
+      return this.a + this.b;
+    };
+    this.min = function(){
+      return this.a - this.b;
+    };
+    this.mul = function(){
+      return this.a * this.b;
+    };
+    this.sum = function(){
+      return this.a + this.b;
+    };
+  }
+  	let calc = new Calc();
+    calc.read();
+
+    alert("Сумма = " + calc.sum());
+    alert("Разность = " + calc.min());
+    alert("Произведение = " + calc.mul());
+  </script>
+ 
+</body>
+</html>
