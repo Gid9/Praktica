@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+ <head></head>
+<body>
+
+  <script>
+  
+    // Напишите функцию-конструктор Accumulator(startingValue).
+// Объект, который она создаёт, должен уметь следующее:
+// Хранить «текущее значение» в свойстве value. Начальное значение устанавливается в аргументе конструктора startingValue.
+// Метод read() использует prompt для получения числа и прибавляет его к свойству value.
+// Таким образом, свойство value является текущей суммой всего, что ввёл пользователь при вызовах метода read(), с учётом начального значения startingValue.
+
+  "use strict" 
+  function Acum(startingValue){
+    this.value = startingValue;
+    this.read = function (){
+     this.value += +prompt("Сколько добавляем","")
+    }
+  }
+  	let acum = new Acum(1);
+    acum.read();
+    acum.read()
+
+    alert(acum.value);
+  </script>
+ 
+</body>
+</html>
